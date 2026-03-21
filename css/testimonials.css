@@ -1,0 +1,44 @@
+.karciqner {
+  margin: 70px 0;
+}
+.karciqner > div {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.karciqner > div > div {
+  width: 45%;
+}
+@media (max-width: 768px) {
+  .karciqner > div > div {
+    width: 90%;
+  }
+}
+.karciqner > div > div > img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.karciqner > div > div > p:nth-child(2) {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.karciqner > div > div > p:last-child {
+  color: #ff5e15;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+.karciqner > div > div > div {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.karciqner > div > div > div > svg {
+  width: 20px;
+  height: 20px;
+  fill: #ff5e15;
+}/*# sourceMappingURL=testimonials.css.map */

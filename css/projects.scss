@@ -1,0 +1,105 @@
+.our_projects {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 70px;
+
+    @media(max-width:552px){
+        width: 95%;
+    }
+
+    &>div {
+        width: 23%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        border: 3px solid #fff;
+        box-shadow: 0 0 20px #00000098;
+
+        @media(max-width:1024px){
+            width: 30%;
+        }
+
+        @media(max-width:768px){
+            width: 45%;
+        }
+
+        &:hover {
+            background-color: #00000050;
+
+            &>img {
+                scale: 1.1;
+            }
+
+            &>div{
+                visibility: visible;
+                animation: visibil .2s linear 1;
+            }
+        }
+
+        &:focus {
+            background-color: #00000050;
+
+            &>img {
+                scale: 1.1;
+            }
+
+            &>div{
+                visibility: visible;
+                animation: visibil .4s linear 1;
+            }
+        }
+
+        &>img {
+            width: 100%;
+            position: relative;
+            z-index: -1;
+            transition: .4s;
+        }
+
+        &>div {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            visibility: hidden;
+
+            &>a {
+                text-decoration: none;
+            }
+
+            &>a>p:first-child {
+                font-size: 1.2em;
+                text-transform: uppercase;
+                color: #ff5e15;
+                margin-bottom: 10px;
+
+                @media(max-width:552px){
+                    font-size: 1em;
+                }
+            }
+
+            &>a>p:last-child {
+                font-size: 1.6em;
+                color: #fff;
+
+                @media(max-width:552px){
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+@keyframes visibil {
+    from{
+        visibility: hidden;
+        transform: translateY(50px);
+    }
+    to{
+        visibility: visible;
+        transform: translateY(0);
+    }
+}

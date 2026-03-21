@@ -1,0 +1,145 @@
+.maini_mayr_div {
+
+    &>form {
+        display: flex;
+        width: 60%;
+        margin: 60px auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 25px;
+
+        @media(max-width:1024px) {
+            width: 75%;
+        }
+
+        @media(max-width:768px) {
+            width: 85%;
+        }
+
+        @media(max-width:552px) {
+            width: 95%;
+        }
+
+        &>input {
+            width: 47%;
+            padding: 10px;
+            font-size: 1.3em;
+            border-radius: 8px;
+            border: 2px solid #00000045;
+            outline: none;
+
+            @media(max-width:552px) {
+                width: 100%;
+            }
+
+            &::placeholder {
+                font-style: italic;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            &:focus {
+                border: 2px solid #ff5e15;
+            }
+        }
+
+        &>input:last-child {
+            width: max-content;
+            padding: 10px 45px;
+            font-size: 1.2em;
+            border: none;
+            outline: none;
+            background-color: #ff5e15;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #d7581d;
+            }
+
+            &:focus {
+                background-color: #d7581d;
+                outline: 3px solid #a03d0f;
+            }
+
+        }
+
+        &>textarea {
+            width: 100%;
+            height: 140px;
+            padding: 10px;
+            font-size: 1.5em;
+            border-radius: 8px;
+            border: 2px solid #00000045;
+            outline: none;
+            resize: none;
+
+            &::placeholder {
+                font-style: italic;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            &:focus {
+                border: 2px solid #ff5e15;
+            }
+        }
+    }
+
+    &>div:last-child {
+        background-image: url(../photos/1.jpg);
+        background-size: cover;
+        width: 100%;
+
+        &>div {
+            width: 100%;
+            background-color: #183661ad;
+            padding: 70px 0;
+
+            &>div {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+
+                @media(max-width:1024px) {
+                    width: 90%;
+                }
+
+                @media(max-width:768px) {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 30px;
+                }
+
+                @media(max-width:552px) {
+                    width: 95%;
+                }
+
+                &>div {
+                    width: 30%;
+
+                    @media(max-width:768px) {
+                        width: 70%;
+                    }
+
+                    @media(max-width:552px) {
+                        width: 95%;
+                    }
+
+                    &>p:first-child {
+                        font-size: 1.3em;
+                        font-weight: bold;
+                        color: #ff5e15;
+                        margin-bottom: 30px;
+                    }
+
+                    &>p:last-child {
+                        font-size: 1.1em;
+                        letter-spacing: 1px;
+                        color: #fff;
+                        line-height: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+}
